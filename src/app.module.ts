@@ -5,6 +5,7 @@ import config from './configuration/config'
 import { GradeModule } from './core/grade/grade.module'
 import { MentorModule } from './core/mentor/mentor.module'
 import { StudentModule } from './core/student/student.module'
+import { TaskModule } from './core/task/task.module'
 @Module({
   imports: [
     ConfigModule.forRoot({ isGlobal: true }),
@@ -12,6 +13,7 @@ import { StudentModule } from './core/student/student.module'
     StudentModule,
     MentorModule,
     GradeModule,
+    TaskModule,
   ],
 })
 export class AppModule {}
