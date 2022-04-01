@@ -1,0 +1,5 @@
+export * from './finised-taks.schema'
+export * from './grade.schema'
+export * from './mentor.schema'
+export * from './task.schema'
+export * from './student.schema'

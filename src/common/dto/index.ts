@@ -1,0 +1,5 @@
+export * from './finished.task'
+export * from './grade.dto'
+export * from './mentor.dto'
+export * from './task.dto'
+export * from './student.dto'
