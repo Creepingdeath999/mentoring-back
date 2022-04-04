@@ -4,7 +4,9 @@ import {
   StudentRepositry,
   MentoRepository,
   GradeRepository,
+  TaskRepository,
 } from './repositories'
+import { FinishedTaskRepository } from './repositories/finished.repository'
 import {
   FinishedTasksSchema,
   GradeSchema,
@@ -22,7 +24,19 @@ import {
       { name: 'Grade', schema: GradeSchema },
     ]),
   ],
-  providers: [StudentRepositry, MentoRepository, GradeRepository],
-  exports: [StudentRepositry, MentoRepository, GradeRepository],
+  providers: [
+    StudentRepositry,
+    MentoRepository,
+    GradeRepository,
+    TaskRepository,
+    FinishedTaskRepository,
+  ],
+  exports: [
+    StudentRepositry,
+    MentoRepository,
+    GradeRepository,
+    TaskRepository,
+    FinishedTaskRepository,
+  ],
 })
 export class DatabaseModule {}
