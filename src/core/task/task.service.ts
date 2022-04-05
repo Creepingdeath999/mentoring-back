@@ -42,4 +42,9 @@ export class TaskService {
   async deleteTask(task: DeleteTask) {
     return this.taskRepository.delete(task)
   }
+
+  async getCategories() {
+    const tasks = await this.taskRepository.getTasks()
+    return tasks.map((task) => task.category)
+  }
 }

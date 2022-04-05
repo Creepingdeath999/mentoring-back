@@ -17,4 +17,8 @@ export class FinishedTaskService {
 
     return this.finishedTaskRepository.add(finishedTask)
   }
+
+  async remove(finishedTask: FinishedTask) {
+    return this.finishedTaskRepository.remove(finishedTask)
+  }
 }
