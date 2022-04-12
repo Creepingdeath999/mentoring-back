@@ -8,6 +8,7 @@ import {
   MentorModule,
   StudentModule,
   TaskModule,
+  CourseModule,
 } from './core'
 
 @Module({
@@ -19,6 +20,7 @@ import {
     GradeModule,
     TaskModule,
     FinishedTaskModule,
+    CourseModule,
   ],
 })
 export class AppModule {}
